@@ -1,0 +1,10 @@
+i		 i		  i
+ii		  ii		ii
+iii		   iii		  iii
+iiii		iiii		iiii
+iiiii		 iiiii		  iiiii
+iiiiii		  iiiiii		iiiiii
+iiiiiii		   iiiiiii		  iiiiiii
+iiiiiiii		iiiiiiii		iiiiiiii
+iiiiiiiii		 iiiiiiiii		  iiiiiiiii
+iiiiiiiiii		  iiiiiiiiii		iiiiiiiiii

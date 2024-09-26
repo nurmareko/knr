@@ -1,0 +1,25 @@
+	Foo	LongName	Bar
+	0	1	2
+	1	4	3
+	2	8	0
+
+
+ 2   6        15
+-Foo-LongName-Bar
+ Foo LongName Bar
+
+ Foo LongName Bar
+ 0   1        2
+ 1   4        3
+ 2   8        0
+
+
+-0---1--------2
+-1---4--------3
+-2---8--------0
+
+	i	ii	iii	iiii	iiiii
+
+    i   ii  iii iiii    iiiii
+    i   ii  iii iiii    iiiii
+    i   ii  iii iiii    iiiii

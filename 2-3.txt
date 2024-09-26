@@ -1,0 +1,18 @@
+Prefix is one of String:
+ - "0x"
+ - "0X"
+
+HexDigit is one of Character:
+ - "0" "1" "2" "3" "4" "5" "6" "7" "8" "9"
+ - "a" "b" "c" "d" "e" "f"
+ - "A" "B" "C" "D" "E" "F"
+
+Hex is one of String
+ - HexDigit ... HexDigit
+ - Prefix HexDigit ... HexDigit
+example:
+ "ff"
+ "FF"
+ "fF"
+ "0xff"
+ "0Xff"

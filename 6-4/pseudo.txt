@@ -1,0 +1,33 @@
+; Stream is a sequence of Character terminated by EOF
+
+struct counter {char *word; int count;};
+; Counter is a structure:
+;   struct counter Identifier = {String, Int};
+; interpretation
+;   the word and its frequency count
+
+; Data is [List-of [Pointer Counter]]
+
+;======================================================================;
+; Stream -> String
+; print the distinct words in its input sorted into decresing order of
+; frequency of occurrence.
+void unique(void) {
+	struct counter **data;
+
+	data = build_alod();
+	sort_data(data);
+	print_data(data);
+}
+
+; Stream -> Data
+; build data from the standard input
+struct counter **build_data(void) {}
+
+; Data -> Data
+; sort data into decreasing order base on the frequency counter
+void sort_data(struct counter **data) {}
+
+; Data -> String
+; print the given data
+void print_data(struct counter **data) {}

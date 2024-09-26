@@ -1,0 +1,44 @@
+; CharStream is sequence of character from standard input.
+
+; Line is an one of:
+; - [Array-of Char ... Char Nul]
+; - [Array-of Char ... Char Newline Nul]
+
+; TextFile is
+; - [Array Null]; an empty file.
+; - [Array-of Line ... Line Null]
+
+
+
+
+;=======================================================================================;
+; CharStream -> TextFile
+; build array of line from the given standard input; return length
+build_lines
+	for (initial length zero; while there's another line; increment length)
+		build line
+	return length
+
+; CharStream -> String
+; build line as a string from the given standard input; return string pointer
+build_line
+
+	if (is newline)
+		build string
+		return string
+	else
+		while (is not newline character)
+			build string
+		return string
+		
+
+; TextFile -> TextFile
+; print the last 10 lines of its input.
+tail afile
+	determine how many line in afile
+	determine the starting line position
+	for (current line; while there's another line; increment current line)
+		if (current line position is less than starting line position)
+			do nothing
+		else if (current line position is greater than or equal to stating line position)
+			write line
